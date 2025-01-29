@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión de Temperatura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🌡️ Conversor de Temperatura 🌡️</h2>
+        <p>Ingresa la temperatura en Celsius y conviértela a Fahrenheit y Kelvin.</p>
+
+        <div class="content">
+            <!-- Contenedor del Termómetro con Escala -->
+            <div class="thermometer-container">
+                <div class="scale">
+                    <div class="scale-line"><span>100</span></div>
+                    <div class="scale-line"><span>90</span></div>
+                    <div class="scale-line"><span>80</span></div>
+                    <div class="scale-line"><span>70</span></div>
+                    <div class="scale-line"><span>60</span></div>
+                    <div class="scale-line"><span>50</span></div>
+                    <div class="scale-line"><span>40</span></div>
+                    <div class="scale-line"><span>30</span></div>
+                    <div class="scale-line"><span>20</span></div>
+                    <div class="scale-line"><span>10</span></div>
+                    <div class="scale-line"><span>0</span></div>
+                </div>
+                <div class="thermometer">
+                    <div class="mercury" id="mercury"></div>
+                </div>
+            </div>
+
+            <!-- Formulario de Conversión -->
+            <div class="conversion-box">
+                <input type="text" id="celsius" placeholder="Ejemplo: 45" oninput="convertirTemperatura()">
+                <button onclick="convertirTemperatura()">Convertir</button>
+                <div id="resultado"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
